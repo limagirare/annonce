@@ -1,0 +1,349 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-family: Courier New, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+main {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Courier New, monospace;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 5rem;
+  font-family: impact, sans-serif;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 20px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #000000;
+  border-color: #ffffff;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+
+
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+mark {
+  background-color: #ffffff;)
+
+  }
+
+
+/****texte déroulant*****/
+
+
+
+/**** retourner fleche*******/
+.fleche, #fleche {
+  transform: rotate(-90);
+}
+
+
+
+/********************/
+/***carousl d'images***/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #999999;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #111111;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+/*********simul credit***********/
+
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+::placeholder{
+  color: #000000;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+#result {
+    margin-top: 20px;
+}
+/*********map***********/
+.map-responsive {
+ overflow:hidden;
+ padding-bottom:56.25%;
+ position:relative;
+ height:0;
+}
+.map-responsive iframe {
+ left:0;
+ top:0;
+ height:100%;
+ width:100%;
+ position:absolute;
+}
+
+/*para deroulant*/
+.container {
+    border: 2px solid white;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column; /* Permet d'empiler les blocs déroulants verticalement */
+}
+
+.accordion {
+    cursor: pointer;
+    padding: 18px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 18px;
+    background-color: #c45824;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Espacement entre les blocs déroulants */
+    color: #ffffff
+}
+
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #c45824;
+}
+/*table*/
+html,body {
+    height: 100%;
+}
+
+.table2x1 {
+    display: table;
+    border-collapse: collapse;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    /*table-layout: fixed;*/
+}
+
+.ligne {
+    display: table-row;
+}
+
+.ligneHead {
+  display: table-header-group;
+    text-align: left;
+    vertical-align: middle;
+}
+
+
+.cell {
+    border: 0px solid #c45824; /*bordure éventuelle*/
+    display: table-cell;
+    vertical-align: top;
+}
+
+
+#A2 {
+    text-align: center;
+}
+
+#B2 {
+    text-align: justify;
+}
+
+#C2 {
+    text-align: center ;
+}
+
+/***tableau texte blanc****/
+table {
+    color: white; /* Définir la couleur du texte du tableau en blanc */
+}
+
+/**cadr**/
+.cadre{
+  border: solid;
+  border-color: #ffffff;
+  margin: 10px
+}
+/*alinea*/
+.alinea{
+  padding:0 0 0 20px;
+}
+
+
